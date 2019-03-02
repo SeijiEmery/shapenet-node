@@ -14,19 +14,19 @@ entrypoint (argument parsing, etc)
 
 server-side model / data processing:
 
-    tools/objprocessor.js
+    src/tools/objprocessor.js
 
 express server (three.js visualization)
     
-    visualization-server/viz-server.js
+    src/visualization-server/viz-server.js
 
 web client (three.js visualization)
 
-    visualization-client/index.js
+    src/visualization-client/index.js
 
 server-side tensorflow training (TBD)
 
-    tensorflow-server/tf-server.js
+    src/tensorflow-server/tf-server.js
 
 Theoretically the express server + tensorflow server would communicate somehow. `tools/` would handle data processing, and would include both functions to do data processing both on individual files and directories / obj globs (in which case it would spin up nodejs clusters / thread workers), and utility functions that could be imported by the tensorflow server and client-side renderer to do various things.
 
