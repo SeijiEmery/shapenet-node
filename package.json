@@ -11,7 +11,7 @@
     "visualize": "node src/index.js --visualize -i data/models/test-model.obj -p data/models/test-model.json -r data/models/reconstructed-models/test-model.json",
     "visualize-all": "node src/index.js --visualize -I data/models -P data/params -R data/reconstructed-models -V data/generated-params -G data/generated-models",
     "visualize-training": "node src/index.js --visualize --tf-train --tf-generate -I data/models -P data/params -R data/reconstructed-models -V data/generated-params -G data/generated-models -l data/tf-models/last-model.json -s data/tf-models/last-model.json",
-    "gisualize-generation": "node src/index.js --visualize --tf-generate -I data/models -P data/params -R data/reconstructed-models -V data/generated-params -G data/generated-models -l data/tf-models/last-model.json -s data/tf-models/last-model.json",
+    "visualize-generation": "node src/index.js --visualize --tf-generate -I data/models -P data/params -R data/reconstructed-models -V data/generated-params -G data/generated-models -l data/tf-models/last-model.json -s data/tf-models/last-model.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
